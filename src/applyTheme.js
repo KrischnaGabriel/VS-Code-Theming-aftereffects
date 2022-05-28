@@ -82,6 +82,7 @@ const placeholder_props = {
     }/*
         This is the function that will do the color transformation.
         This function declared here is obviously a dummy. 
+	Also, you don't have to worry that your returned color value may not be in range. It will be clipped if it is not.
         Have fun! 
     */
 }
