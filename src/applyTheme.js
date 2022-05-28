@@ -170,13 +170,14 @@ function doTheThing(props) {
         
             function walk(obj) {
                 for (const [key,value] of Object.entries(obj)) {
+                    if (props.exclusion_rules_keys.includes(key)
+                        || props.exclusion_rules_values.includes(value)
+                    ) break;
                     if (typeof value == "object") {
                         walk(value)
                     }
                     if (typeof value == "string" 
                         && value.match(/#[0-9a-fA-F]{3,8}/g)
-                        && (!props.exclusion_rules_keys.includes(key)
-                        || props.exclusion_rules_values.includes(value))
                     ) {
                         let string = value.substring(1)
 
