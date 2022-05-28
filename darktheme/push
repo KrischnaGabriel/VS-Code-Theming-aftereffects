@@ -1,2 +1,0 @@
-mv -f dark_plus_out.json /var/lib/flatpak/app/com.vscodium.codium/current/active/files/share/codium/resources/app/extensions/theme-defaults/themes/dark_plus.json
-mv -f dark_vs_out.json /var/lib/flatpak/app/com.vscodium.codium/current/active/files/share/codium/resources/app/extensions/theme-defaults/themes/dark_vs.json
